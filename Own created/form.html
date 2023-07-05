@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        body{
+            background-image:url(./NM.jpg) ;
+        }
+        .form{
+            width: 600px;
+            height: 500px;
+            background-color: rgb(100, 83, 83);
+            opacity: 0.9;
+            margin: 100px 600px;
+            border-radius: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #000;
+        }
+        .head{
+            border-bottom: 1px solid rgb(138, 118, 118);
+            height: 75px;
+            line-height: 80px;
+            display: block;
+            color: white;
+            text-align: center;
+            font-size: 2em;
+         
+           
+        }
+        .box input{
+            display: block;
+            width: 92%;
+            height: 40px;
+            margin-top: 10px;
+            border-radius: 30px;
+            border: none;
+            margin-left: 20px;
+            color: #fff;
+
+        }
+        .box input:hover{
+            background-color: black;
+        }
+        p{
+            color: #fff;
+            margin-left: 20px;
+        }
+        p a{
+            color: greenyellow;
+        }
+        input[type="submit"]{
+            display: block;
+            float: right;
+            height: 50px;
+            width: 250px;
+            margin-right: 100px;
+            border-radius: 10px;
+            font-size: 20px;
+            background-color: green;
+            box-shadow: 10px 10px 15px black;
+        }
+        .btn:hover{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+
+    <form class="form" action="a.js">
+
+        <div class="head">Create an Account</div>
+        <div class="box">
+            <input type="text" name="text" value="" placeholder="Enter Your Name">
+            <input type="number" name="number" value="" placeholder="Enter Your Number">
+            <input type="email" name="email" value="" placeholder="Enter Your Email">
+            <input type="password" name="password" value="" placeholder="Enter Your Password">
+
+        </div>
+
+        <p><input type="checkbox" name="checkbox"value="agree">I agree to the<a href="">Terms and Conditions</a> And <a href="">Privet Policy</a></p>
+        <input class="btn" type="submit" name="submit" value="Create Account">
+    </form>
+    
+</body>
+</html>

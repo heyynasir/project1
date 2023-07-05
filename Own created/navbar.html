@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <style>
+        body{
+            background: url(./NM.jpg);
+            
+        }
+        ul{
+            background-color: black;
+            color: white;   
+            padding: 20px;
+            border-radius: 20px;
+            
+        }
+        ul li{
+            display: inline-block;
+            margin-left: 20px;
+            font-size: 22px;
+        }
+        ul a{
+            text-decoration: none;
+            color: #fff;
+        }
+     
+        a:hover{
+            color: red;
+
+        }
+        input{
+            margin-left: 10px;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        .form{
+            width: 600px;
+            height: 500px;
+            background-color: rgb(10, 7, 7);
+            opacity: 0.8;
+            border-radius: 10px;
+            margin-left:700px ;
+
+        }
+        .head{
+            text-align: center;
+            height: 70px;
+            border-bottom: 1px solid rgb(53, 44, 44);
+            line-height: 70px;
+            color: #fff;
+            font-size: 2em;
+        }
+
+        .inputs input{
+            width: 500px;
+            margin-top: 10px;
+            padding: 15px;
+            margin-left: 30px;
+            border-radius: 20px;
+            border: none;
+        }
+        .inputs input:hover{
+            background-color: black;
+            color: #fff;
+        }
+        p{
+            color: #fff;
+            margin-left: 25px;
+            font-size: 18px;
+        }
+        p a{
+            color: greenyellow;
+        }
+        input[type="submit"]{
+            float: right;
+            width: 200px;
+            height: 50px;
+            font-size: 20px;
+            margin-right: 200px;
+            background-color: aqua;
+            box-shadow: 10px 10px 10px rgb(53, 47, 47);
+        }
+        input[type="submit"]:hover{
+            background-color: rgb(18, 196, 18);
+        }
+      
+    </style>
+</head>
+<body>
+
+        <nav class="conatainer">
+            <ul>
+                <li><a href="#">Cources</a></li>
+                <li><a href="#">Certificate</a></li>
+                <li><a href="#">AboutUs</a></li>
+                <li><a href="#">Contact</a></li>
+                <input type="text" value="" name="search" placeholder="Search Cource">
+            </ul>
+          
+        </nav>
+       
+    </header>
+
+    <form class="form" action="nasir.js">
+        <div class="head">Create an Account</div>
+        <div class="inputs">
+            <input type="text" name="text" value="" placeholder="Name">
+            <input type="number" name="number" value="" placeholder="Mobile Number">
+            <input type="email" name="email" value="" placeholder="Email">
+            <input type="password" name="password" value="" placeholder="password">
+        </div>
+        <div class="box">
+            <p><input type="checkbox" name="agree" value="agree">I agree to the <a href="#">Terms and conditions</a> And <a href="#">Privet Policy</a></p>
+            <input type="submit" name="submit" value="Create Account">
+           </div>
+    </form>
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body{
+            background-image: url(./NM2.jpg);
+            background-size: cover;
+        }
+        .form{
+            width: 500px;
+            height: 400px;
+            margin: 120px 750px;
+            border-radius: 10px;
+            background-image:-webkit-linear-gradient(top , #3b3b3b , #373737);
+            opacity: 0.7;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .h1{
+           color: #fff;
+           text-align: center;
+           height: 77px;
+           line-height:77px ;
+           font-size: 2em;
+           border-bottom: 1px solid #1b1b1b;
+           padding-left: 5px;
+          
+        }
+        .box input{
+            display: block;
+            width: 92%;
+            height: 38px;
+            margin: 10px auto;
+            padding-left: 5px;
+            border-radius: 20px;
+            border: none;
+            text-shadow: 0px 1px 1px 1px #5b595a;
+        }
+        .tnc {
+            margin-left: 25px;
+            font-size: 1em !important;
+            text-align: left !important;
+            color: #fff;
+        }
+        .tnc a{
+            color: greenyellow;
+        }
+        input[type="submit"]{
+            display: block;
+            width: 250px;
+            float: right;
+            height: 48px;
+            border-radius: 20px;
+            margin-right: 20px;
+            border: ;
+            background-color: green;
+            color: #fff;
+        }
+        input[type="submit"]:hover{
+            background-color: rgb(34, 134, 201);
+        }
+    </style>
+</head>
+<body>
+    
+    <form class="form" action="a.php">
+        <div class="h1">Create an Account</div>
+        
+        <div class="box">
+            <input type="text" value="" placeholder="Enter Your Name">
+            <input type="number" name="number" value="" placeholder="Enter Your Number">
+            <input type="email" name="email" value="" placeholder="Enter your Email">
+            <input type="password"  name="password" value="" placeholder="Enter your Password">
+        </div>
+
+        <p class="tnc"><input type="checkbox" name="tnc" value="agree">I agree to the <a href="#">Terms and Condition</a> And <a href="#">Privet Policy</a></p>
+        <input type="submit" name="submit" value="Create Account">
+    </form>
+</body>
+</html>
